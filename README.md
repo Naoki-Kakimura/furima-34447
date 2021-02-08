@@ -54,7 +54,6 @@
 |----------------------------|------------|-------------------------------|
 | user                       | references | null:false, foreign_key: true |
 | item                       | references | null:false, foreign_key: true |
-| purchase_information_data  | references | null:false, foreign_key: true |
 
 ### Association
 
@@ -74,6 +73,7 @@
 | address            | string          | null: false                   |
 | bill_name          | string          |                               |
 | phone_num          | string          | null: false,11桁              |
+| order              | references      | null:false, foreign_key: true |
 
 ### Association
 

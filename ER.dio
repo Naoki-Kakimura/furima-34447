@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2021-02-08T11:20:25.170Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_0) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.0 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="H3W0l9L6dY7STRillpPn" version="13.10.0" type="embed">
+<mxfile host="65bd71144e" modified="2021-02-08T11:37:13.994Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_0) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.0 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="hEirC_anjjhoondfiwJp" version="13.10.0" type="embed">
     <diagram id="i9W-9MqWiOwnqakpbm0W" name="ページ1">
-        <mxGraphModel dx="941" dy="907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+        <mxGraphModel dx="2316" dy="1360" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -32,7 +32,7 @@
                     <mxGeometry y="236" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="83" value="items" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-                    <mxGeometry x="780" y="220" width="160" height="266" as="geometry"/>
+                    <mxGeometry x="780" y="220" width="160" height="326" as="geometry"/>
                 </mxCell>
                 <mxCell id="86" value="name" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="83">
                     <mxGeometry y="26" width="160" height="30" as="geometry"/>
@@ -57,6 +57,12 @@
                 </mxCell>
                 <mxCell id="94" value="price&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="83">
                     <mxGeometry y="236" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" value="prefectures_id&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="83">
+                    <mxGeometry y="266" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="180" value="user&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="83">
+                    <mxGeometry y="296" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="95" value="comments" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
                     <mxGeometry x="540" y="30" width="160" height="116" as="geometry"/>
@@ -122,7 +128,10 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="113" value="prefectures" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-                    <mxGeometry x="760" y="540" width="150" height="710" as="geometry"/>
+                    <mxGeometry x="760" y="626" width="150" height="710" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="{id: 1, name: '北海道'}, &#10;{id: 2, name: '青森県'},&#10; {id: 3, name: '岩手県'},&#10;      {id: 4, name: '宮城県'},&#10; {id: 5, name: '秋田県'},&#10;{id: 6, name: '山形県'},&#10;      {id: 7, name: '福島県'}, &#10;{id: 8, name: '茨城県'}, &#10;{id: 9, name: '栃木県'},&#10;      {id: 10, name: '群馬県'}, &#10;{id: 11, name: '埼玉県'},&#10; {id: 12, name: '千葉県'},&#10;      {id: 13, name: '東京都'},&#10; {id: 14, name: '神奈川県'},&#10; {id: 15, name: '新潟県'},&#10;      {id: 16, name: '富山県'},&#10; {id: 17, name: '石川県'},&#10; {id: 18, name: '福井県'},&#10;      {id: 19, name: '山梨県'},&#10; {id: 20, name: '長野県'}, &#10;{id: 21, name: '岐阜県'},&#10;      {id: 22, name: '静岡県'},&#10; {id: 23, name: '愛知県'}, &#10;{id: 24, name: '三重県'},&#10;      {id: 25, name: '滋賀県'},&#10; {id: 26, name: '京都府'}, &#10;{id: 27, name: '大阪府'},&#10;      {id: 28, name: '兵庫県'},&#10;{id: 29, name: '奈良県'}, &#10;{id: 30, name: '和歌山県'},&#10;      {id: 31, name: '鳥取県'}, &#10;{id: 32, name: '島根県'},&#10; {id: 33, name: '岡山県'},&#10;      {id: 34, name: '広島県'},&#10; {id: 35, name: '山口県'}, &#10;{id: 36, name: '徳島県'},&#10;      {id: 37, name: '香川県'},&#10; {id: 38, name: '愛媛県'},&#10; {id: 39, name: '高知県'},&#10;      {id: 40, name: '福岡県'}, &#10;{id: 41, name: '佐賀県'}, &#10;{id: 42, name: '長崎県'},&#10;      {id: 43, name: '熊本県'},&#10; {id: 44, name: '大分県'}, &#10;{id: 45, name: '宮崎県'},&#10;      {id: 46, name: '鹿児島県'}, &#10;{id: 47, name: '沖縄県'}" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="113">
+                    <mxGeometry y="26" width="150" height="684" as="geometry"/>
                 </mxCell>
                 <mxCell id="117" value="Text" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=12;" vertex="1" parent="1">
                     <mxGeometry x="320" y="440" width="40" height="20" as="geometry"/>
@@ -223,9 +232,9 @@
                         <mxPoint x="890" y="440" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="158" value="" style="fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;startFill=0;endFill=0;entryX=0.385;entryY=-0.002;entryDx=0;entryDy=0;exitX=0.26;exitY=1.133;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="94" target="113">
+                <mxCell id="158" value="" style="fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;startFill=0;endFill=0;entryX=0.385;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="113">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="880" y="520" as="sourcePoint"/>
+                        <mxPoint x="830" y="550" as="sourcePoint"/>
                         <mxPoint x="820" y="520" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
@@ -253,9 +262,6 @@
                         <mxPoint x="940" y="550" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="115" value="{id: 1, name: '北海道'}, &#10;{id: 2, name: '青森県'},&#10; {id: 3, name: '岩手県'},&#10;      {id: 4, name: '宮城県'},&#10; {id: 5, name: '秋田県'},&#10;{id: 6, name: '山形県'},&#10;      {id: 7, name: '福島県'}, &#10;{id: 8, name: '茨城県'}, &#10;{id: 9, name: '栃木県'},&#10;      {id: 10, name: '群馬県'}, &#10;{id: 11, name: '埼玉県'},&#10; {id: 12, name: '千葉県'},&#10;      {id: 13, name: '東京都'},&#10; {id: 14, name: '神奈川県'},&#10; {id: 15, name: '新潟県'},&#10;      {id: 16, name: '富山県'},&#10; {id: 17, name: '石川県'},&#10; {id: 18, name: '福井県'},&#10;      {id: 19, name: '山梨県'},&#10; {id: 20, name: '長野県'}, &#10;{id: 21, name: '岐阜県'},&#10;      {id: 22, name: '静岡県'},&#10; {id: 23, name: '愛知県'}, &#10;{id: 24, name: '三重県'},&#10;      {id: 25, name: '滋賀県'},&#10; {id: 26, name: '京都府'}, &#10;{id: 27, name: '大阪府'},&#10;      {id: 28, name: '兵庫県'},&#10;{id: 29, name: '奈良県'}, &#10;{id: 30, name: '和歌山県'},&#10;      {id: 31, name: '鳥取県'}, &#10;{id: 32, name: '島根県'},&#10; {id: 33, name: '岡山県'},&#10;      {id: 34, name: '広島県'},&#10; {id: 35, name: '山口県'}, &#10;{id: 36, name: '徳島県'},&#10;      {id: 37, name: '香川県'},&#10; {id: 38, name: '愛媛県'},&#10; {id: 39, name: '高知県'},&#10;      {id: 40, name: '福岡県'}, &#10;{id: 41, name: '佐賀県'}, &#10;{id: 42, name: '長崎県'},&#10;      {id: 43, name: '熊本県'},&#10; {id: 44, name: '大分県'}, &#10;{id: 45, name: '宮崎県'},&#10;      {id: 46, name: '鹿児島県'}, &#10;{id: 47, name: '沖縄県'}" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
-                    <mxGeometry x="760" y="566" width="160" height="684" as="geometry"/>
-                </mxCell>
                 <mxCell id="167" value="shippingDays" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
                     <mxGeometry x="1020" y="980" width="160" height="146" as="geometry"/>
                 </mxCell>
@@ -272,7 +278,7 @@
                     <mxGeometry y="116" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="172" value="orders" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-                    <mxGeometry x="270" y="566" width="160" height="116" as="geometry"/>
+                    <mxGeometry x="530" y="295" width="160" height="116" as="geometry"/>
                 </mxCell>
                 <mxCell id="173" value="user" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="172">
                     <mxGeometry y="26" width="160" height="30" as="geometry"/>
@@ -280,13 +286,25 @@
                 <mxCell id="174" value="item" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="172">
                     <mxGeometry y="56" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="176" value="purchaseInfomationDates" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="172">
+                <mxCell id="176" value="purchaseInfomationData" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="172">
                     <mxGeometry y="86" width="160" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="177" value="" style="fontSize=12;html=1;endArrow=ERone;startArrow=ERone;startFill=0;endFill=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1.013;entryY=0.064;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="99">
+                <mxCell id="177" value="" style="fontSize=12;html=1;endArrow=ERone;startArrow=ERone;startFill=0;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.44;entryY=0.978;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="99" target="176">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
                         <mxPoint x="508.0600000000001" y="878.654" as="sourcePoint"/>
                         <mxPoint x="429.99999999999994" y="580.0040000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="178" value="" style="fontSize=12;html=1;endArrow=ERone;startArrow=ERone;startFill=0;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="83">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="694.6" y="299.65999999999997" as="sourcePoint"/>
+                        <mxPoint x="689.9999999999999" y="169.99999999999991" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="179" value="" style="fontSize=12;html=1;endArrow=ERone;startArrow=ERone;startFill=0;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="530" y="295" as="sourcePoint"/>
+                        <mxPoint x="450" y="240" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
