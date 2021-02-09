@@ -10,9 +10,14 @@ class User < ApplicationRecord
     validates :first_name_kan
     validates :last_name_kan
   end
-  
+
   with_options presence: true, format:{with: /\A[ァ-ヶー－]+\z/, message: '全角カタカナを使用してください' }do
   validates :first_name_kata
   validates :last_name_kata
+  end
+
+  VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i
+  with_options format:{with: VALID_PASSWORD_REGEX, message: '英字と数字の両方を含めて設定してください'}do
+    validates :password
   end
 end
