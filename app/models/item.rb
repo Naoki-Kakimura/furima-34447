@@ -9,17 +9,16 @@ class Item < ApplicationRecord
   belongs_to :prefectures
 
   with_options presence: true do
-    validates :name
-
+    validates :name, length: {maximum:40}
+    validates :text, length: {maximum:1000}
     with_options numericality: { other_than: 1 } do
       validates :category_id
-      validates :text
       validates :status_id
       validates :shipping_charge_id
       validates :shipping_day_id
       validates :prefectures_id
     end
-    
+
   end
 
   VALID_PRICE_REGEX = /\A[0-9]+\z/
