@@ -1,14 +1,25 @@
 class Item < ApplicationRecord
   belongs_to :user
   has_one_attached :image
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :category
+  belongs_to :status_id
+  belongs_to :shipping_day
+  belongs_to :shipping_charge
+  belongs_to :prefectures
+
   with_options presence: true do
     validates :name
-    validates :category_id
-    validates :text
-    validates :status_id
-    validates :shipping_charge_id
-    validates :shipping_day_id
-    validates :prefectures_id
+
+    with_options numericality: { other_than: 1 } do
+      validates :category_id
+      validates :text
+      validates :status_id
+      validates :shipping_charge_id
+      validates :shipping_day_id
+      validates :prefectures_id
+    end
+    
   end
 
   VALID_PRICE_REGEX = /\A[0-9]+\z/
