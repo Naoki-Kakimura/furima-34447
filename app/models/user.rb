@@ -25,4 +25,6 @@ class User < ApplicationRecord
   with_options format:{with: VALID_PASSWORD_REGEX, message: '英字と数字の両方を含めて設定してください'}do
     validates :password
   end
+
+  has_many :items
 end
