@@ -3,10 +3,10 @@ class Item < ApplicationRecord
   has_one_attached :image
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
-  belongs_to :status_id
   belongs_to :shipping_day
   belongs_to :shipping_charge
   belongs_to :prefectures
+  belongs_to :status
 
   with_options presence: true do
     validates :name, length: {maximum:40}
@@ -26,4 +26,14 @@ class Item < ApplicationRecord
   format:{with:VALID_PRICE_REGEX, message: "半角英数字で¥300~¥9,999,999の間で記入してください"} do
     validates :price
   end
+
+  validate :validate_image
+
+  private
+   def validate_image
+    if image.attached?
+    else
+      errors.add(:image, "写真ファイルを添付してください")
+    end
+   end
 end
