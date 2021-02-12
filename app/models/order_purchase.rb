@@ -1,6 +1,6 @@
 class OrderPurchase
   include ActiveModel::Model
-  attr_accessor :user_id, :item_id, :post_num, :prefecture_id, :municipality, :address, :bill_name, :phone_num, :order_id
+  attr_accessor :user_id, :item_id, :post_num, :prefecture_id, :municipality, :address, :bill_name, :phone_num, :order_id,:token
 
   with_options presence:true do
     validates :user_id
@@ -15,7 +15,7 @@ class OrderPurchase
   end
 
   def save
-    order = Order.create(item_id: item_id, user_id: user_id)
+    order = Order.create(item_id: item_id, user_id: user_id,token: token)
     PurchaseInformation.create(post_num: post_num, prefecture_id: prefecture_id, municipality: municipality, address: address, bill_name: bill_name, phone_num: phone_num, order_id: order.id)
   end
 end
