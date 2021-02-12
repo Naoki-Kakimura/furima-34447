@@ -43,10 +43,10 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include("Shipping day must be other than 1")
       end
-      it 'prefectures_idが1では保存できない' do 
-        @item.prefectures_id = 1
+      it 'prefecture_idが1では保存できない' do 
+        @item.prefecture_id = 1
         @item.valid?
-        expect(@item.errors.full_messages).to include("Prefectures must be other than 1")
+        expect(@item.errors.full_messages).to include("prefecture must be other than 1")
       end
       it 'priceが空では保存されない' do 
         @item.price = ""

@@ -31,7 +31,7 @@
 | status_id          | integer            | null: false                    |
 | shipping_charge_id | integer            | null: false                    |
 | shipping_day_id    | integer            | null: false                    |
-| prefectures_id     | integer            | null: false                    |
+| prefecture_id     | integer            | null: false                    |
 | price              | integer            | null: false, 300~9,999,999     |
 | user               | references         | null: false, foreign_key: true |
 
@@ -44,7 +44,7 @@
 - belongs_to :status
 - belongs_to :shippingCharge
 - belongs_to :shippingDay
-- belongs_to :prefectures
+- belongs_to :prefecture
 
 
 
@@ -68,7 +68,7 @@
 | Column             | Type            | Option                        |
 |--------------------|-----------------|-------------------------------|
 | post_num           | string          | null:false, ハイフン必須        |
-| prefectures_id     | integer         | null: false                   |
+| prefecture_id     | integer         | null: false                   |
 | municipality       | string          | null: false                   |
 | address            | string          | null: false                   |
 | bill_name          | string          |                               |
