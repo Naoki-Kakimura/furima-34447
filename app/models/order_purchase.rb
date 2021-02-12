@@ -5,11 +5,12 @@ class OrderPurchase
   with_options presence:true do
     validates :user_id
     validates :item_id
+    validates :token
   end
   with_options presence:true do
     validates :post_num,format:{with:/\A[0-9]{3}-[0-9]{4}\z/ ,message:'半角英数字で-(ハイフン)をつけて記入して下さい'}
     validates :prefecture_id,numericality: { other_than: 1 }
-    validates :phone_num, length: {maximum:11}
+    validates :phone_num, length: {maximum:11},format:{with:/\A[0-9０-９]+\z/ ,message:'11桁以内の数値のみで記入して下さい'}
     validates :municipality
     validates :address
   end

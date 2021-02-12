@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
+  before_action :check_buy_user, only:[:new]
   def new
     @order_purchase = OrderPurchase.new
     @item = Item.find(params[:item_id])
@@ -28,5 +29,10 @@ class OrdersController < ApplicationController
   def order_purchase_params
     params.require(:order_purchase).permit(:post_num,:prefecture_id,:municipality,:address,:bill_name,:phone_num).merge(user_id:current_user.id,item_id:params[:item_id],token: params[:token])
   end
-
+  def check_buy_user
+    item = Item.find(params[:item_id])
+    if current_user.id == item.user_id || Order.exists?(item_id: item.id)
+      redirect_to root_path
+    end
+  end
 end
